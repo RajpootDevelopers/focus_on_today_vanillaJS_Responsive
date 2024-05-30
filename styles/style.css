@@ -1,0 +1,40 @@
+:root{
+  --color-green: #48a300;
+  --color-brown : #61481c;
+  --color-light-green : #f2f9ed;
+  --color-warn : #ff5151;
+  --color-light-gray : #d9d9d9;
+  --color-gray : #d0c8bb;
+}
+
+
+*{
+  margin: 0;
+  line-height: calc(1em + .5rem);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "General Sans", sans-serif;
+  background-color: var(--color-light-green);
+}
+
+img, 
+picture,
+video,
+svg,
+canvas{
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button{
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

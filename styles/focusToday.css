@@ -1,0 +1,120 @@
+.heading{
+    color: var(--color-brown);
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.white-container{
+    background-color: #fbfbfb;
+    border-radius: .5em;
+    padding: 2em;
+    margin: 2em;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
+}
+h2{
+    font-size: 1em;
+}
+.sun-icon{
+    display: inline;
+    width: 1.5em;
+    vertical-align: middle;
+}
+
+.progress-bar{
+    height: 2rem;
+    background-color: #48A3001A;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+
+}
+.progress-value{
+    height: 100%;
+    background-color: #48A300;
+    border-radius: 15px;
+    width: 0%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+}
+.progress-label{
+    color: #fbfbfb;
+    padding-left: 1rem;
+
+}
+.progress-title{
+    font-size: 1rem;
+}
+
+.error-label{
+    color: var(--color-warn);
+    font-size: .8rem;
+    visibility: hidden;
+}
+
+.goal{
+    border: 1px solid var(--color-gray);
+    padding-left: 1em;
+    /* padding-top:  1em; */
+    /* padding-bottom:  1em; */
+    border-radius: .5rem;
+    background-color: #fff;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+} 
+.check-icon{
+    display: none;
+} 
+.completed .custom-checkbox{
+    border: 1px solid var(--color-green);
+    background-color: #48A300;
+}
+.completed .check-icon{
+    display: block;
+}
+
+.custom-checkbox{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    width: 100%;
+    border: none;
+    font-size: .9rem;
+    padding-left: .8rem;
+    /* background-color: red;    */
+    align-self: stretch;
+    margin-right: 2rem;
+    /* height: 100%; */
+    font-weight: 500;
+}
+.input:focus{
+    outline: none;
+}
+.input::placeholder {
+    color: #d9d9d9;
+}
+
+.completed .input{
+    color: #48A300;
+    text-decoration: line-through;
+}
+
+.qoute{
+    text-align: center;
+    font-size: .8rem;
+    padding-top: 2rem;
+}
+.made-with{
+    text-align: center;
+    font-size: .8rem;
+    padding-top: 2rem;
+}
