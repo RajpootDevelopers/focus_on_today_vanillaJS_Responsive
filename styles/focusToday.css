@@ -18,10 +18,23 @@ h2{
     display: inline;
     width: 1.5em;
     vertical-align: middle;
+    animation: rotate360 2s linear infinite; 
 }
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* .face-icon{
+    position: absolute;
+    left: 10px;
 
+} */
 .progress-bar{
-    height: 2rem;
+    height: 1.5rem;
     background-color: #48A3001A;
     border-radius: 15px;
     margin-top: 1rem;
@@ -36,12 +49,14 @@ h2{
     display: flex;
     align-items: center;
     overflow: hidden;
+    transition: width .25s ease-in-out;
+    font-size: .8rem;
 
 }
 .progress-label{
     color: #fbfbfb;
     padding-left: 1rem;
-
+    min-width: max-content;
 }
 .progress-title{
     font-size: 1rem;
@@ -121,3 +136,83 @@ h2{
     font-size: .8rem;
     padding-top: 2rem;
 }
+
+
+/* xs */
+@media(min-width: 475px){
+        .heading{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+        .sun-icon{
+        width: 3rem;
+        }
+        .progress-bar{
+            height: 2rem;
+        }
+    }
+    /* sm */
+    @media(min-width: 640px){
+        .heading{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+        .sun-icon{
+        width: 3rem;
+        }
+
+    }
+    /* md */
+    @media(min-width: 768px){
+        .progress-value{
+            font-size: 1rem;
+        }
+        .qoute{
+            font-size: 1rem;
+        }
+    }
+    /* lg */
+    @media(min-width: 1024px){
+        .heading{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 2.4em;
+        }
+        .sun-icon{
+        width: 3.5rem;
+        }
+        .progress-bar{
+            height: 2.4rem;
+        }
+        .progress-value{
+            font-size: 1.5rem;
+        }
+
+    }
+    /* xl */
+    @media(min-width: 1280px){
+
+    }
+    /* 2xl */
+    @media(min-width: 1536px){
+        .heading{
+            font-size: 3.5rem;
+        }
+        h2{
+            font-size: 2.2em;
+        }
+        .sun-icon{
+        width: 4rem;
+        }
+        .progress-bar{
+            height: 2.8rem;
+        }
+        .progress-value{
+            font-size: 1.9rem;
+        }
+    }
