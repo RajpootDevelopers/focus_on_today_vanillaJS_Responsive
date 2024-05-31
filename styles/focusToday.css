@@ -96,6 +96,9 @@ h2{
     /* height: 100%; */
     font-weight: 500;
 }
+.input:disabled{
+    background-color: #fff;
+}
 .input:focus{
     outline: none;
 }
