@@ -6,7 +6,6 @@
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
-    border: 1px solid red;
 }
 strong{
     color: var(--color-green);

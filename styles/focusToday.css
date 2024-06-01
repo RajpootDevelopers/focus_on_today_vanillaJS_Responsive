@@ -2,13 +2,13 @@
     color: var(--color-brown);
     text-align: center;
     font-size: 1.5rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 .white-container{
     background-color: #fbfbfb;
     border-radius: .5em;
-    padding: 2em;
-    margin: 2em;
+    padding: 1rem;
+    margin: 1rem;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .1);
 }
 h2{
@@ -76,7 +76,7 @@ h2{
     border-radius: .5rem;
     background-color: #fff;
     display: flex;
-    height: 5rem;
+    height: 2.5rem;
     align-items: center;
 } 
 .check-icon{
@@ -147,10 +147,13 @@ h2{
             font-size: 1.5em;
         }
         .sun-icon{
-        width: 3rem;
+        width: 2rem;
         }
         .progress-bar{
             height: 2rem;
+        }
+        .goal{
+            height: 3rem;
         }
     }
     /* sm */
@@ -162,7 +165,10 @@ h2{
             font-size: 2rem;
         }
         .sun-icon{
-        width: 3rem;
+        width: 2.5rem;
+        }
+        .goal{
+            height: 3.5rem;
         }
 
     }
@@ -174,6 +180,9 @@ h2{
         .qoute{
             font-size: 1rem;
         }
+        .goal{
+            height: 3.7rem;
+        }
     }
     /* lg */
     @media(min-width: 1024px){
@@ -181,27 +190,51 @@ h2{
             font-size: 3rem;
         }
         h2{
-            font-size: 2.4em;
+            font-size: 2em;
         }
         .sun-icon{
-        width: 3.5rem;
+        width: 3rem;
         }
         .progress-bar{
-            height: 2.4rem;
+            height: 2.2rem;
         }
         .progress-value{
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+        }
+        .goal{
+            height: 3.9rem;
         }
 
     }
     /* xl */
     @media(min-width: 1280px){
-
+        .heading{
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 2.5em;
+        }
+        .sun-icon{
+        width: 3.5rem;
+        }
+        .progress-bar{
+            height: 2.5rem;
+        }
+        .progress-value{
+            font-size: 1.7rem;
+        }
+        .white-container{
+            margin: 2rem;
+            padding: 2rem;
+        }
+        .goal{
+            height: 4.5rem;
+        }
     }
     /* 2xl */
     @media(min-width: 1536px){
         .heading{
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
         h2{
             font-size: 2.2em;
@@ -215,4 +248,8 @@ h2{
         .progress-value{
             font-size: 1.9rem;
         }
+        .goal{
+            height: 5rem;
+        }
+
     }
