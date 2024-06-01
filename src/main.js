@@ -9,20 +9,15 @@ const inputFields = document.querySelectorAll("input");
 const errorLabel = document.querySelector(".error-label");
 const progressValue = document.querySelector(".progress-value");
 const progressLabel = document.querySelector(".progress-label");
-const result0 = document.getElementsByClassName("quote")[0];
-const result1 = document.getElementsByClassName("quote")[1];
 const progressTitle= document.getElementsByClassName("progress-title")[0];
 const bottomQouat = document.getElementsByClassName("qoute")[0];
-console.log(bottomQouat)
 
-
-console.log(progressTitle)
 
 const allQouats = [
     "Raise the bar by completing your goals!",
     "Well begun is half done!",
     "Just a step away, keep going!",
-    "Whoa! You just completed all the goals, time for chill"
+    "Whoa! You just completed all the goals, time for chill :)"
 ]
 
 const bottomQouats = [
@@ -33,10 +28,9 @@ const bottomQouats = [
 let progValue = 0;
 
 const allGoals = JSON.parse(localStorage.getItem("allGoals")) || {};
-console.log(allGoals);
 
 let totalCompleted = Object.values(allGoals).filter((goal) => goal.completed).length;
-console.log(totalCompleted)
+
 const updateProgressTitle = () => {
         if(totalCompleted===0){
             progressTitle.textContent = allQouats[0];
@@ -45,7 +39,7 @@ const updateProgressTitle = () => {
         }else if(totalCompleted===2){
             progressTitle.textContent = allQouats[2];
         }else if(totalCompleted===3){
-            progressTitle.textContent = allQouats[3];
+            progressTitle.textContent = allQouats[3];            
         }
 }
 
@@ -118,6 +112,7 @@ allCheckBoxes.forEach((box, index) => {
             
             updateBottomQouat(totalCompleted);
             updateProgressTitle(totalCompleted);
+
             progressLabel.innerHTML = `${totalCompleted}/3 Completed`;
 
             allGoals[inputId].progressValue = progValue;
